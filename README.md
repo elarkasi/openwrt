@@ -14,6 +14,7 @@
 - 集成 [xiaoqingfengATGH/luci-theme-infinityfreedom](https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom) 皮肤
 
 <img src="https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/blob/master/screenshots/000.Login.jpg" alt="" width="400">
+<img src="https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/blob/master/screenshots/001.Overview.jpg" alt="" width="400">
 
 ### 计划
 - 在docker hub上发布对应的docker镜像
