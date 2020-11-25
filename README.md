@@ -9,14 +9,13 @@
 特此鸣谢!
 
 ### 说明
-- 支持树莓派4
+- 仅支持树莓派4
 - 精简组件，仅保留去广告插件adbyby-plus与科学看书插件ssr-plus
 - 集成infinityFreedom皮肤
 
 ### 计划
-
 - 在docker hub上发布对应的docker镜像
-- 进一步完善编译流程，加入树莓派3B+支持
+- 进一步完善编译流程
   
 ### 状态
 ![Build OpenWrt](https://github.com/elarkasi/OpenWrt-Lean-Pi4-firmware/workflows/Build%20OpenWrt/badge.svg)
