@@ -11,7 +11,7 @@
 ### 说明
 - 仅支持树莓派4
 - 精简组件，仅保留去广告插件adbyby-plus与科学看书插件ssr-plus
-- 集成infinityFreedom皮肤
+- 集成 [xiaoqingfengATGH/luci-theme-infinityfreedom](https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom) 皮肤
 
 ### 计划
 - 在docker hub上发布对应的docker镜像
