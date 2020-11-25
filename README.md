@@ -12,6 +12,10 @@
 
 - 精简组件，仅保留去广告插件adbyby-plus与科学看书插件ssr-plus
 - 集成infinityFreedom皮肤
+
+### 计划
+
+- docker image on docker hub
   
 ### 状态
-![Build Status](https://github.com/elarkasi/OpenWrt-Lean-Pi4-firmware/workflows/Build%20OpenWrt/badge.svg)
+![Build OpenWrt](https://github.com/elarkasi/OpenWrt-Lean-Pi4-firmware/workflows/Build%20OpenWrt/badge.svg)
