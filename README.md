@@ -1,3 +1,6 @@
+# 编译状态
+![Build OpenWrt](https://github.com/elarkasi/OpenWrt-Lean-Pi4-firmware/workflows/Build%20OpenWrt/badge.svg)
+
 # Actions-OpenWrt
 
 [![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
