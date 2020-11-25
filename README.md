@@ -1,6 +1,9 @@
-# Raspberry Pi-4 Lean OpenWrt
+# [Raspberry Pi4 OpenWrt](https://github.com/elarkasi/OpenWrt-Lean-Pi4-firmware)
+
 [![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/elarkasi/OpenWrt-Lean-Pi4-firmware/blob/main/LICENSE)
-    本项目基于[Lean OpenWrt](https://github.com/coolsnowwolf/lede)与[P3TERX/Action-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
+    
+    本项目基于[Lean's OpenWrt](https://github.com/coolsnowwolf/lede)与[P3TERX/Action-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
+    
     特此感谢!
 
 ## 说明
