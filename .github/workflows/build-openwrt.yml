@@ -18,12 +18,13 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-  schedule:
-    - cron: 0 8 1 * *
+#  schedule:
+#    - cron: 0 8 1 * *
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
+  DEVICE: openwrt-bcm27xx-bcm2711-rpi-4
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
@@ -165,6 +166,13 @@ jobs:
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
         echo "::set-output name=status::success"
+        
+    - name: Build & Push Docker Image To Dockerhub
+      run: |
+          cd openwrt/bin/targets/$TARGET/$SUBTARGET/
+          docker import $DEVICE-rootfs.tar.gz ${{ secrets.DOCKER_HUB_USERNAME }}/openwrt:rpi4
+          docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PWD }}
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/openwrt:rpi4
 
     - name: Upload firmware to release
       uses: softprops/action-gh-release@v1
