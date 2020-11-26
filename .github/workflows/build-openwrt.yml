@@ -169,7 +169,7 @@ jobs:
         
     - name: Build & Push Docker Image To Dockerhub
       run: |
-          cd openwrt/bin/targets/$TARGET/$SUBTARGET/
+          cd openwrt/bin/targets/*/*/
           docker import $DEVICE-rootfs.tar.gz ${{ secrets.DOCKER_HUB_USERNAME }}/openwrt:rpi4
           docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PWD }}
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/openwrt:rpi4
