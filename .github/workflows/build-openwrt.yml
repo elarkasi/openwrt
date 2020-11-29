@@ -171,9 +171,9 @@ jobs:
       run: |
           # cd openwrt/bin/targets/bcm27xx/bcm2711
           # docker import $DEVICE-rootfs.tar.gz ${{ secrets.DOCKER_HUB_USERNAME }}/openwrt:rpi4
-          docker import https://github.com/elarkasi/raspi-openwrt/releases/download/2020.11.27-1442/openwrt-bcm27xx-bcm2711-rpi-4-rootfs.tar.gz ${{ secrets.DOCKER_HUB_USERNAME }}/openwrt:latest
+          docker import https://github.com/elarkasi/raspi-openwrt/releases/download/2020.11.27-1442/openwrt-bcm27xx-bcm2711-rpi-4-rootfs.tar.gz ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:latest
           docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PWD }}
-          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/openwrt:rpi4
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:latest
 
     - name: Upload firmware to release
       uses: softprops/action-gh-release@v1
