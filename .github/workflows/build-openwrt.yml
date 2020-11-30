@@ -183,7 +183,7 @@ jobs:
     - name: Build & Push Docker Image To Dockerhub
       run: |
           cd openwrt/bin/targets/$TARGET/$SUBTARGET
-          docker import $DEVICE-rootfs.tar.gz ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:latest
+          docker import ${{ env.DEVICE_NAME }}-rootfs.tar.gz ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:latest
           # docker import https://github.com/elarkasi/raspi-openwrt/releases/download/2020.11.27-1442/openwrt-bcm27xx-bcm2711-rpi-4-rootfs.tar.gz ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:latest
           docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PWD }}
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:latest
@@ -208,7 +208,7 @@ jobs:
       uses: dev-drprasad/delete-older-releases@v0.1.0
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
-        keep_latest: 3
+        keep_latest: 1
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
