@@ -181,12 +181,12 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
     
-   # - name: Build & Push Docker Image To Dockerhub
-   #   run: |
-   #       cd openwrt/bin/targets/$TARGET/$SUBTARGET
-   #       docker import ${{ env.DEVICE }}-rootfs.tar.gz ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:latest
-   #       docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PWD }}
-   #       docker push ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:latest
+    - name: Build & Push Docker Image To Dockerhub
+      run: |
+          cd openwrt/bin/targets/$TARGET/$SUBTARGET
+          docker import ${{ env.DEVICE }}-rootfs.tar.gz ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:latest
+          docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PWD }}
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:latest
 
     - name: Upload firmware to release
       uses: softprops/action-gh-release@v1
