@@ -185,7 +185,7 @@ jobs:
       run: |
           cd openwrt/bin/targets/$TARGET/$SUBTARGET
           docker import $DEVICE-rootfs.tar.gz ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:latest
-          echo "${{ secrets.DOCKER_HUB_PWD }}" | docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
+          echo ${{ secrets.DOCKER_HUB_PWD }} | docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:latest
 
     - name: Upload firmware to release
