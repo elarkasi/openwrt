@@ -5,12 +5,12 @@
 ### 前言
 
 本项目基于[Lean's OpenWrt](https://github.com/coolsnowwolf/lede) 与 [P3TERX/Action-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
+参考[SulingGG](https://github.com/SuLingGG/OpenWrt-Rpi-Docker)
     
 特此鸣谢!
 
 ### 说明
 - 每月1号发布一次
-- 仅支持树莓派4
 - 精简组件，仅保留去广告插件adbyby-plus与科学看书插件ssr-plus
 - 集成 [xiaoqingfengATGH/luci-theme-infinityfreedom](https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom) 皮肤
 
