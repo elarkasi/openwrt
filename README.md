@@ -23,4 +23,4 @@
 - 进一步完善编译流程
   
 ### 状态
-![Build OpenWrt](https://github.com/elarkasi/OpenWrt-Lean-Pi4-firmware/workflows/Build%20OpenWrt/badge.svg)
+![rpi4-openwrt autobuild action](https://github.com/elarkasi/raspi-openwrt/workflows/rpi4-openwrt%20autobuild%20action/badge.svg)
