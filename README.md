@@ -1,6 +1,6 @@
 ## [Raspberry Pi4 OpenWrt](https://github.com/elarkasi/raspi-openwrt)
 
-[![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/elarkasi/OpenWrt-Lean-Pi4-firmware/blob/main/LICENSE)
+[![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/elarkasi/raspi-openwrt/blob/main/LICENSE)
     
 ### 前言
 
