@@ -19,7 +19,7 @@
 <img src="https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/blob/master/screenshots/000.Login.jpg" alt="" width="400" height="247"><img src="https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/blob/master/screenshots/001.Overview.jpg" alt="" width="400" height="247">
 
 ### 问题
-- 启动时报warning,不影响使用，原因暂时未知
+- 启动时报warning，不影响使用，原因暂时未知
 - 删除container时会引起树莓派重启，原因暂时未知
   
 ### 状态
