@@ -1,4 +1,4 @@
-## [Raspberry Pi4 OpenWrt](https://github.com/elarkasi/raspi-openwrt)
+## [OpenWrt](https://github.com/elarkasi/openwrt)
 
 [![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/elarkasi/raspi-openwrt/blob/master/LICENSE)
     
@@ -12,7 +12,8 @@
 
 ### 说明
 - 主要用于有线旁路由，每周日更新
-- raspi-openwrt:rpi4 仅支持树莓派4:64位系统
+- openwrt:rpi4 仅支持树莓派4 64位系统
+- openwrt:x86_64 支持x86_64系统
 - 精简组件，仅保留去广告插件adbyby-plus与科学看书插件ssr-plus
 - 集成 [xiaoqingfengATGH/luci-theme-infinityfreedom](https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom) 皮肤
 
