@@ -183,9 +183,9 @@ jobs:
     - name: Build & Push Docker Image To Dockerhub
       run: |
           cd openwrt/bin/targets/$TARGET/$SUBTARGET
-          docker import $DEVICE-rootfs.tar.gz ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:x86_64
+          docker import $DEVICE-rootfs.tar.gz ${{ secrets.DOCKER_HUB_USERNAME }}/openwrt:x86_64
           echo ${{ secrets.DOCKER_HUB_PWD }} | docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
-          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/raspi-openwrt:x86_64
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/openwrt:x86_64
           
     - name: Upload firmware to release
       uses: softprops/action-gh-release@v1
