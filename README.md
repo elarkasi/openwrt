@@ -1,4 +1,4 @@
-## [OpenWrt](https://github.com/elarkasi/openwrt)
+## [Docker OpenWrt](https://github.com/elarkasi/openwrt)
 
 [![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/elarkasi/raspi-openwrt/blob/master/LICENSE)
     
