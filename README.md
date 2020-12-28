@@ -25,3 +25,5 @@
   
 ### 状态
 ![rpi4-openwrt autobuild action](https://github.com/elarkasi/raspi-openwrt/workflows/rpi4-openwrt%20autobuild%20action/badge.svg)
+
+![x86_64-openwrt autobuild action](https://github.com/elarkasi/openwrt/workflows/x86_64-openwrt%20autobuild%20action/badge.svg)
