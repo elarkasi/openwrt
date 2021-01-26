@@ -14,7 +14,7 @@
 - 主要用于有线旁路由，每周日更新
 - openwrt:rpi4 仅支持树莓派4 64位系统
 - openwrt:x86_64 支持x86_64系统
-- 精简组件，仅保留去广告插件adbyby-plus与科学看书插件ssr-plus
+- 精简组件，仅保留科学看书插件ssr-plus
 - 集成 [xiaoqingfengATGH/luci-theme-infinityfreedom](https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom) 皮肤
 
 <img src="https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/blob/master/screenshots/000.Login.jpg" alt="" width="400" height="247"><img src="https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/blob/master/screenshots/001.Overview.jpg" alt="" width="400" height="247">
